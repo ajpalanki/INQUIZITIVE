@@ -68,8 +68,27 @@
 }
 
 @media (max-width: $md-breakpoint) {
+  .instructions {
+    margin-top: 0;
+    margin-bottom: 0;
+
+    h1 {
+      color: $off-white;
+    }
+
+    .button-container {
+      width: 90% !important;
+    }
+  }
+
   .instructions img {
     width: 100% !important;
     height: 150% !important;
+  }
+
+  .button-container a {
+    display: block;
+    font-size: $nm;
+    padding: 0.2rem 0.5rem !important;
   }
 }

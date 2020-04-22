@@ -29,3 +29,10 @@
   opacity: 0.9 !important;
   pointer-events: none !important;
 }
+
+@media (max-width: $md-breakpoint) {
+  * {
+    background-color: $off-black;
+    color: $off-white;
+  }
+}

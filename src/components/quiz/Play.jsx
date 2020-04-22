@@ -497,7 +497,7 @@ export default class Play extends Component {
         </Fragment>
         {currentQuestion !== undefined ? (
           <div className="questions">
-            <h2>{currentQuestion.category}</h2>
+            <h4>{currentQuestion.category}</h4>
             <div className="lifeline-container">
               <p onClick={this.handlFiftyFifty} className="lifeline-icon">
                 <FontAwesomeIcon icon={faHourglassStart}></FontAwesomeIcon>{' '}

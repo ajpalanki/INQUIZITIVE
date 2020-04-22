@@ -3,16 +3,15 @@
   background-size: cover;
   background-position: center;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
   width: 100vw;
+  max-width: 100%;
 
   section {
     background-color: rgba(0, 0, 0, 0.7);
     border-radius: 5px;
-    padding-left: $md;
-    padding-right: $md;
-    height: 80%;
     width: 35%;
   }
 
@@ -40,7 +39,6 @@
     cursor: pointer;
     padding: $nm;
     display: block;
-    border-radius: $button-radius;
     text-align: center;
     transition: 0.3s linear all;
   }
@@ -87,9 +85,28 @@
 }
 
 @media (max-width: 768px) {
-  #home section {
-    padding: 0 $nm;
-    width: 100%;
-    height: 100%;
+  #home {
+    background-image: url('../../assets/img/mobile-background.jpg');
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-color: $off-black;
+    background-position: center;
+
+    section {
+      background-color: rgba(0, 0, 0, 0);
+      padding: 0 $nm;
+      width: 80%;
+      height: 80%;
+    }
+
+    .cube {
+      margin-top: -2rem;
+    }
+
+    h1 {
+      color: #ffa500;
+      margin-top: 35rem;
+      font-weight: 800;
+    }
   }
 }

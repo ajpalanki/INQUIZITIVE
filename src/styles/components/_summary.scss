@@ -93,12 +93,27 @@
     font-size: $sm;
     padding-left: $xs;
     padding-right: $xs;
-  }
+    margin-top: 5rem;
 
-  div.container.stats {
-    margin: 0;
-    padding: $sm;
-    max-width: 100%;
-    width: 100%;
+    .container.stats {
+      margin: 0;
+      padding: $sm;
+      max-width: 100%;
+      width: 100%;
+      background-color: $off-black;
+      color: $off-white;
+
+      h4 {
+        color: $off-white;
+      }
+    }
+
+    .stats .stat {
+      color: $off-white;
+    }
+
+    section ul {
+      margin-bottom: 2rem;
+    }
   }
 }
