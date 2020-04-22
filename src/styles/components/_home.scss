@@ -1,0 +1,95 @@
+#home {
+  background-image: url('../../assets/img/background.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: space-around;
+  height: 100vh;
+  width: 100vw;
+
+  section {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    padding-left: $md;
+    padding-right: $md;
+    height: 80%;
+    width: 35%;
+  }
+
+  .cube {
+    font-size: 8rem;
+    color: $orange;
+    margin-top: $md;
+  }
+
+  h1 {
+    font-size: $lg;
+    font-weight: 400;
+    text-align: center;
+    color: $off-white;
+    margin-top: $xxl;
+  }
+
+  .play-button-container {
+    width: 100%;
+  }
+
+  a.play-button {
+    background-color: $green;
+    color: #ffffff;
+    cursor: pointer;
+    padding: $nm;
+    display: block;
+    border-radius: $button-radius;
+    text-align: center;
+    transition: 0.3s linear all;
+  }
+
+  a.play-button:hover {
+    background-color: darken($color: $green, $amount: 10%);
+    box-shadow: $shadow;
+  }
+
+  .auth-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: $md;
+  }
+
+  .auth-container .auth-buttons {
+    color: #ffffff;
+    cursor: pointer;
+    border-radius: 30px;
+    padding: $nm 0;
+    text-align: center;
+    width: 45%;
+    transition: 0.3s linear all;
+  }
+
+  #login-button {
+    background-color: $red;
+    box-shadow: $shadow;
+  }
+
+  #login-button:hover {
+    background-color: darken($color: $red, $amount: 10%);
+  }
+
+  #register-button {
+    background-color: $blue;
+    box-shadow: $shadow;
+  }
+
+  #register-button:hover {
+    background-color: darken($color: $blue, $amount: 10%);
+  }
+}
+
+@media (max-width: 768px) {
+  #home section {
+    padding: 0 $nm;
+    width: 100%;
+    height: 100%;
+  }
+}
