@@ -24,14 +24,14 @@ const Home = () => (
             </li>
           </ul>
         </div>
-        <div className="auth-container">
+        {/* <div className="auth-container">
           <Link className="auth-buttons" to="/login" id="login-button">
             Login
           </Link>
           <Link className="auth-buttons" to="/register" id="register-button">
             Register
           </Link>
-        </div>
+        </div> */}
       </section>
     </div>
   </Fragment>
