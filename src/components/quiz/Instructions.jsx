@@ -20,7 +20,7 @@ const Instructions = () => {
       </Helmet>
       <div className="instructions container">
         <h1>How to Play the Game</h1>
-        <p>Ensure you read this guid from start to finish.</p>
+        <p>Ensure you read this guide from start to finish.</p>
         <ul className="browser-default" id="main-list">
           <li>
             The game has a duration of 15 minutes and ends as soon as your time
@@ -72,7 +72,7 @@ const Instructions = () => {
           <li>The timer starts as soon as game loads.</li>
           <li>Let's do this if you think you've got what it takes?</li>
         </ul>
-        <div>
+        <div className="button-container">
           <span className="left">
             <Link to="/">No, Take me Back.</Link>
           </span>

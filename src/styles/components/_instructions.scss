@@ -28,6 +28,43 @@
     width: 80%;
     height: 50%;
   }
+
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto $sm auto;
+    padding: $md;
+    width: 100%;
+  }
+
+  .button-container a {
+    border: none;
+    color: $off-white;
+    cursor: pointer;
+    font-family: $quicksand;
+    margin-right: $md;
+    padding: $xs $sm;
+  }
+
+  .button-container .left a {
+    background-color: darken($color: $red, $amount: 10%);
+    box-shadow: $shadow;
+    transition: 0.2s linear all;
+  }
+
+  .button-container .left a:hover {
+    background-color: darken($color: $red, $amount: 20%);
+  }
+
+  .button-container .right a {
+    background-color: darken($color: $green, $amount: 10%);
+    box-shadow: $shadow;
+    transition: 0.2s linear all;
+  }
+
+  .button-container .right a:hover {
+    background-color: darken($color: $green, $amount: 20%);
+  }
 }
 
 @media (max-width: $md-breakpoint) {

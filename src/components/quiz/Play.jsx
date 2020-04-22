@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import axios from 'axios';
 import M from 'materialize-css';
-import cx from 'classnames';
+// import cx from 'classnames';
 import { Helmet } from 'react-helmet';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
@@ -483,8 +483,6 @@ export default class Play extends Component {
       hints,
       fiftyFifty,
       time,
-      previousButtonDisabled,
-      nextButtonDisabled,
     } = this.state;
 
     return (
