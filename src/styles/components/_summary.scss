@@ -22,6 +22,22 @@
     color: lighten($off-black, 10%);
   }
 
+  .button-container {
+    padding: 0;
+  }
+
+  .button-container button:first-child {
+    background-color: darken($color: $blue, $amount: 20%);
+    color: $off-white;
+    box-shadow: $shadow;
+    transition: 0.2s linear all;
+  }
+
+  .button-container button:first-child:hover {
+    background-color: $off-white;
+    color: $blue;
+  }
+
   .stats {
     background-color: $off-white;
     max-width: 50%;

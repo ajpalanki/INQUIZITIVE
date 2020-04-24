@@ -23,7 +23,7 @@ const Instructions = () => {
         <p>Ensure you read this guide from start to finish.</p>
         <ul className="browser-default" id="main-list">
           <li>
-            The game has a duration of 15 minutes and ends as soon as your time
+            The game has a duration of 3 minutes and ends as soon as your time
             elapses.
           </li>
           <li>Each game consists of 15 questions.</li>
@@ -37,30 +37,25 @@ const Instructions = () => {
             <img src={answer} alt="InQUIZitive Answer Example" />
           </li>
           <li>
-            Each game has 2 lifelines namly:
-            <ul id="sublist">
+            Each game has lifelines as follows:
+            <ol id="sublist">
               <li>2 50-50 chances</li>
               <li>5 Hints</li>
-            </ul>
+            </ol>
           </li>
           <li>
             Selecting a 50-50 lifeline by clicking the icon{' '}
             <FontAwesomeIcon
               icon={faHourglassStart}
-              size="2x"
               className="lifeline-icon"
             />{' '}
-            will remove 2 wrong answers, leaving the correct answer and the one
+            will remove 2 wrong answers, leaving the correct answer and one
             wrong answer.
             <img src={fiftyFifty} alt="InQUIZitive Fifty-Fifty Example" />
           </li>
           <li>
             Using a hint by clicking the icon{' '}
-            <FontAwesomeIcon
-              icon={faLightbulb}
-              size="2x"
-              className="lifeline-icon"
-            />{' '}
+            <FontAwesomeIcon icon={faLightbulb} className="lifeline-icon" />{' '}
             will remove one wrong answer leaving two wrong answers and correct
             answer. You can use as many hints as possible on a single question.
             <img src={hints} alt="InQUIZitive Hints Example" />

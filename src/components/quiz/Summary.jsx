@@ -9,6 +9,7 @@ export default class Summary extends Component {
     super(props);
 
     this.state = {
+      questions: [],
       score: 0,
       numberOfQuestions: 0,
       numberOfAnsweredQuestions: 0,
@@ -23,6 +24,7 @@ export default class Summary extends Component {
     const { state } = this.props.location;
 
     this.setState({
+      questions: state.questions,
       score: (state.score / state.numberOfQuestions) * 100,
       numberOfQuestions: state.numberOfQuestions,
       numberOfAnsweredQuestions: state.numberOfAnsweredQuestions,
@@ -32,6 +34,10 @@ export default class Summary extends Component {
       fiftyFiftyUsed: state.fiftyFiftyUsed,
     });
   }
+
+  handleReviewButton = () => {
+    this.props.history.push('/play/review', this.state.questions);
+  };
 
   render() {
     const { state } = this.props.location;
@@ -59,6 +65,11 @@ export default class Summary extends Component {
           </div>
           <h1>Congratulations, you made it!</h1>
           <div className="container stats">
+            <div className="button-container">
+              <button onClick={this.handleReviewButton}>
+                View Answer Sheet
+              </button>
+            </div>
             <h4>{remark}</h4>
             <h2>Your Score: {this.state.score.toFixed(0)}&#37;</h2>
             <span className="stat left">Total Number of Questions:</span>

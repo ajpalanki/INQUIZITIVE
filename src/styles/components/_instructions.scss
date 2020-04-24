@@ -13,7 +13,6 @@
 
   .lifeline-icon {
     position: relative;
-    top: 5px;
     color: $green;
     cursor: pointer;
   }
@@ -22,6 +21,10 @@
     padding-left: 30px;
     margin-top: 10px;
     margin-bottom: 15px;
+  }
+
+  #sublist {
+    margin-left: 30px;
   }
 
   img {
@@ -71,6 +74,7 @@
   .instructions {
     margin-top: 0;
     margin-bottom: 0;
+    color: $off-white;
 
     h1 {
       color: $off-white;

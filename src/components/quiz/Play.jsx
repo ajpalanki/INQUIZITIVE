@@ -452,6 +452,7 @@ export default class Play extends Component {
 
   endGame = () => {
     const {
+      questions,
       score,
       numberOfQuestions,
       correctAnswers,
@@ -460,6 +461,7 @@ export default class Play extends Component {
       hints,
     } = this.state;
     const playerStats = {
+      questions,
       score,
       numberOfQuestions,
       numberOfAnsweredQuestions: correctAnswers + incorrectAnswers,
@@ -469,7 +471,6 @@ export default class Play extends Component {
       hintsUsed: 5 - hints,
     };
 
-    console.log(playerStats);
     setTimeout(() => {
       this.props.history.push('/play/summary', playerStats);
     }, 1000);
