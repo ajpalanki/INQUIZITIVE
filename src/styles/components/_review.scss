@@ -30,7 +30,7 @@ h1 {
 
 /* Style the counter cards */
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 4px 4px 8px 8px rgba(0, 0, 0, 0.2);
   padding: 16px;
   background-color: #f1f1f1;
   height: 200px;
@@ -92,5 +92,18 @@ section ul li:last-child a:hover {
     width: 100%;
     display: block;
     margin-bottom: 20px;
+  }
+
+  .card {
+    background-color: $off-black;
+    color: $off-white;
+  }
+
+  .card ul {
+    background-color: $off-black;
+  }
+
+  section ul {
+    margin-top: 0;
   }
 }
