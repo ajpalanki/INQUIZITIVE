@@ -1,1 +1,1 @@
-CLICK HERE TO LAUNCH WEBSITE - https://abhijeetpalanki-inquizitive.netlify.app/
+VISIT HERE - https://abhijeetpalanki-inquizitive.netlify.app/
